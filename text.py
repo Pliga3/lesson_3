@@ -9,7 +9,7 @@ SIGN = os.getenv('SIGN')
 
 letter = """\
 From: yulya-pligina@yandex.ru
-To: yulya-pligina@yandex.ru
+To: LOGIN
 Subject: Приглашение!
 Content-Type: text/plain; charset="UTF-8";
 
@@ -34,8 +34,6 @@ letter = letter.replace("%friend_name%", "Дмитрий")
 letter = letter.replace("%my_name%", "Юлия")
 
 letter = letter.encode("UTF-8")
-
-print(letter)
 
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
 server.login(LOGIN,SIGN)
