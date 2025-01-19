@@ -6,10 +6,11 @@ load_dotenv()
 
 LOGIN = os.getenv('LOGIN')
 SIGN = os.getenv('SIGN')
+RECIPIENT = os.getenv('RECIPIENT')
 
 letter = """\
-From: yulya-pligina@yandex.ru
-To: LOGIN
+From: LOGIN
+To: RECIPIENT
 Subject: Приглашение!
 Content-Type: text/plain; charset="UTF-8";
 
@@ -37,5 +38,5 @@ letter = letter.encode("UTF-8")
 
 server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
 server.login(LOGIN,SIGN)
-server.sendmail(LOGIN, LOGIN, letter)
+server.sendmail(LOGIN, RECIPIENT, letter)
 server.quit()
