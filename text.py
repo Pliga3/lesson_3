@@ -33,6 +33,7 @@ Content-Type: text/plain; charset="UTF-8";
 letter = letter.replace("%website%","https://dvmn.org/profession-ref-program/julia_pligina/3cN0m/")
 letter = letter.replace("%friend_name%", "Дмитрий")
 letter = letter.replace("%my_name%", "Юлия")
+letter = letter.replace("LOGIN", "yulya-pligina@yandex.ru")
 
 letter = letter.encode("UTF-8")
 
