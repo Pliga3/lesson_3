@@ -34,6 +34,7 @@ letter = letter.replace("%website%","https://dvmn.org/profession-ref-program/jul
 letter = letter.replace("%friend_name%", "Дмитрий")
 letter = letter.replace("%my_name%", "Юлия")
 letter = letter.replace("LOGIN", "yulya-pligina@yandex.ru")
+letter = letter.replace("RECIPIENT", "dima.pavlovn5@mail.ru")
 
 letter = letter.encode("UTF-8")
 
